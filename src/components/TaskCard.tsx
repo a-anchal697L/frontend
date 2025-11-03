@@ -4,8 +4,8 @@ import type { Task } from '../pages/Dashboard';
 
 interface TaskCardProps {
   task: Task;
-  onEdit?: (id: number) => void;
-  onDelete?: (id: number) => void;
+  onEdit?: (id: string) => void;
+  onDelete?: (id: string) => void;
 }
 
 
@@ -13,7 +13,7 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, onEdit, onDelete }) => {
 
   return (
           <div
-            key={task.id}
+            key={task._id}
             className="group relative bg-white dark:bg-gray-900 shadow-md hover:shadow-lg rounded-2xl p-4 border border-gray-200 dark:border-gray-700 transition-all duration-300 hover:-translate-y-1"
           >
            
@@ -66,10 +66,10 @@ const TaskCard: React.FC<TaskCardProps> = ({ task, onEdit, onDelete }) => {
 
             {/* Action buttons */}
             <div className="flex justify-end gap-3">
-              <button onClick={onEdit} className="flex items-center justify-center gap-1 text-sm font-medium text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-3 py-1.5 rounded-lg transition">
+              <button onClick={() => onEdit?.(task._id)} className="flex items-center justify-center gap-1 text-sm font-medium text-blue-500 hover:bg-blue-50 dark:hover:bg-blue-900/30 px-3 py-1.5 rounded-lg transition">
                  <Edit/> Edit
               </button>
-              <button onClick={onDelete} className="flex items-center gap-1 text-sm font-medium text-red-600 hover:bg-red-50 dark:hover:bg-red-900/30 px-3 py-1.5 rounded-lg transition">
+              <button onClick={() => onDelete?.(task._id)} className="flex items-center gap-1 text-sm font-medium text-red-600 hover:bg-red-50 dark:hover:bg-red-900/30 px-3 py-1.5 rounded-lg transition">
                 <Trash2/>  Delete
               </button>
             </div>

@@ -8,7 +8,7 @@ import toast from "react-hot-toast";
 import ConfirmDialog from "../components/ConfirmDialog";
 
 export interface Task {
-  id: number;
+  _id: string;
   title: string;
   description: string;
   status: "Pending" | "In Progress" | "Done";
@@ -63,7 +63,7 @@ const Dashboard = () => {
   // --- Filtering + Sorting ---
   const filteredTasks = useMemo(() => {
     const visibleTasks =
-      filter === "All" ? tasks : tasks.filter((t) => t.status === filter);
+      filter === "All" ? tasks : tasks.filter((t:Task) => t.status === filter);
 
     const sorted = [...visibleTasks].sort((a, b) => {
       if (sortBy === "Deadline (Soonest)")
