@@ -4,7 +4,7 @@ import type { RootState } from '../../store';
 export const taskApi = createApi({
   reducerPath: 'taskApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'http://localhost:5000/api/tasks',
+    baseUrl: 'https://backend-4ifw.onrender.com/api/tasks',
     prepareHeaders: (headers, { getState }) => {
        const token = (getState() as RootState).auth.token;
       if (token) headers.set('authorization', `Bearer ${token}`);

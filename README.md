@@ -75,7 +75,7 @@ npm run dev
 ![Add Task Light](./images/add_task_l.png)
 
 **Dark Mode**
-![Add Task Dark](./images/tasks_dark_d.png)
+![Add Task Dark](./images/add_task_d.png)
 
 #### 📝 All Tasks 
 **Light Mode**
