@@ -29,7 +29,7 @@ cd frontend
 npm install
 ```
 
-###  3. Run the frontend development server:
+###  4. Run the frontend development server:
 
 ```bash
 npm run dev
@@ -58,6 +58,31 @@ npm run dev
  
 
 ---
+
+### 📸 Screens
+
+#### 🔐 Auth Pages
+**Login**
+![Login](./images/login.png)
+
+**Signup**
+![Signup](./images/signup.png)
+
+---
+
+#### 📝 Add Task 
+**Light Mode**
+![Add Task Light](./images/add_task_l.png)
+
+**Dark Mode**
+![Add Task Dark](./images/tasks_dark_d.png)
+
+#### 📝 All Tasks 
+**Light Mode**
+![All Tasks ](./images/tasks_l.png)
+
+**Dark Mode**
+![All Tasks ](./images/tasks_d.png)
 
 
 
