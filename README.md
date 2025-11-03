@@ -1,4 +1,4 @@
-# 🧠 Task Management Application
+## Task Management Application
 
 A **Task Management ** built with **React**, **TypeScript**, **Express**, and **MongoDB**, featuring **JWT Authentication**, **Dark/Light Mode**, and a clean modern UI.  
 
@@ -6,30 +6,43 @@ Users can **sign up, log in, and manage personal tasks** (create, view, update, 
 
 ---
 
+##  Setup & Installation
 
-
-## ⚙️ Setup & Installation
-
-Follow these steps to set up and run the project locally on your machine 👇
+Follow these steps to set up and run the project locally on your machine 
 
 ---
 
-### 🧩 1. Clone the Repository
+###  1. Clone the Repository
 
 ```bash
 git clone https://github.com/<your-username>/task-manager.git
-cd task-manager
+```
+###  2. Open a new terminal window and navigate to the frontend folder:
+
+```bash
+cd frontend
 ```
 
+###  3. Install dependencies:
 
-## 🚀 Features
+```bash
+npm install
+```
+
+###  3. Run the frontend development server:
+
+```bash
+npm run dev
+```
+
+##  Features
 
 ### 🔐 Authentication
 - User **signup and login** with email & password  
 - **JWT-based authentication** for API security  
 - Protected routes — only logged-in users can access their tasks  
 
-### ✅ Task Management
+###  Task Management
 - **CRUD operations** (Create, Read, Update, Delete)  
 - Each task includes:
   - 🏷️ Title  
@@ -38,7 +51,7 @@ cd task-manager
   - 📅 Deadline date  
 - **User-specific tasks** — each user can only access their own data  
 
-### 💡 UI Features
+###  UI Features
 - 🌗 **Dark / Light mode** toggle  
 - 🎯 **Filter & Sort Tasks** by status or date  
 - ⚡ Responsive design (works on mobile & desktop)  
@@ -46,17 +59,6 @@ cd task-manager
 
 ---
 
-## 🛠️ Tech Stack
 
-| Layer | Technology |
-|-------|-------------|
-| Frontend | React.js + TypeScript + TailwindCSS |
-| Backend | Node.js + Express + TypeScript |
-| Database | MongoDB (Mongoose) |
-| Authentication | JWT |
-| Styling | TailwindCSS 
-| Deployment | Render (Backend) + Vercel (Frontend) |
-
----
 
 
